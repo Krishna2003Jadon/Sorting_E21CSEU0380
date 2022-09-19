@@ -1,44 +1,38 @@
+public class BubbleSorting_E21CSEU0380
+{
+    static void bubbleSort(int a[])
+    {
+        int len = a.length; // calculating the length of array
+        for (int i = 0; i < len-1; i++)
+            for (int j = 0; j < len-i-1; j++) 
+                if (a[j] > a[j+1]) //comparing the pair of elements
+                {
+                    // swapping a[j+1] and a[i]
+                    int temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                }
+    }
 
-public class BubbleSorting_E21CSEU0380 {
+    /* Prints the array */
+    static void printArray(int a[])
+    {
+        int len = a.length;
+        for (int i = 0; i < len; i++)
+            System.out.print(a[i] + " "); //printing the sorted array
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		public class BubbleSortExample {  
-		    static void bubbleSort(int[] arr) {  
-		        int n = arr.length;  
-		        int temp = 0;  
-		         for(int i=0; i < n; i++){  
-		                 for(int j=1; j < (n-i); j++){  
-		                          if(arr[j-1] > arr[j]){  
-		                                 //swap elements  
-		                                 temp = arr[j-1];  
-		                                 arr[j-1] = arr[j];  
-		                                 arr[j] = temp;  
-		                         }  
-		                          
-		                 }  
-		         }  
-		  
-		    }  
-		    public static void main(String[] args) {  
-		                int arr[] ={3,60,35,2,45,320,5};  
-		                 
-		                System.out.println("Array Before Bubble Sort");  
-		                for(int i=0; i < arr.length; i++){  
-		                        System.out.print(arr[i] + " ");  
-		                }  
-		                System.out.println();  
-		                  
-		                bubbleSort(arr);//sorting array elements using bubble sort  
-		                 
-		                System.out.println("Array After Bubble Sort");  
-		                for(int i=0; i < arr.length; i++){  
-		                        System.out.print(arr[i] + " ");  
-		                }  
-		   
-		        }  
-		}  
+        System.out.println();
+    }
 
-	}
+    // Main method to test above
+    public static void main(String args[])
+    {
+        int arr[] = {64, 34, 25, 12, 22, 11, 90};
 
+        bubbleSort(arr);//calling the bubbleSort function
+
+        System.out.println("Sorted array");
+
+        printArray(arr); //calling the printArray function
+    }
 }
