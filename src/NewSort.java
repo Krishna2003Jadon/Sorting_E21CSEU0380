@@ -1,7 +1,6 @@
 
 public class NewSort {
-
-	public static void main(String[] args) {
+ {
 		// TODO Auto-generated method stub
 		 int n = arr.length;  
 	        int temp = 0;  
@@ -18,7 +17,7 @@ public class NewSort {
 	         }  
 	  
 	    }  
-	     {  
+	    public static void main(String[] args) {  
 	                int arr[] ={3,60,35,2,45,320,5};  
 	                 
 	                System.out.println("Array Before Bubble Sort");  
